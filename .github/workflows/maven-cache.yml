@@ -5,8 +5,8 @@ on:
   workflow_call:
     secrets:
       DH_USERNAME:
-	      required: true
-	    DH_TOKEN:
+        required: true
+      DH_TOKEN:
         required: true
 
 jobs:
