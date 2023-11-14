@@ -3,11 +3,16 @@ name: Docker image Build Process
 on:
   workflow_dispatch:
   workflow_call:
+    secrets:
+      DH_USERNAME:
+	      required: true
+	    DH_TOKEN:
+        required: true
 
 jobs:
   docker:
-#    env:
-#     appName: "springboot-image"
+    env:
+     appName: "springboot-image"
     runs-on: ubuntu-latest
     steps:
 #      - name: Checkout
