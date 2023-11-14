@@ -7,5 +7,5 @@ jobs:
   Reusable-caller-job:
     uses: ./.github/workflows/maven-cache.yml
     secrets:
-      DH_USERNAME: ${{ DH_USERNAME }}
-      DH_TOKEN: ${{ DH_TOKEN }}
+      DH_USERNAME: ${{ secrets.DH_USERNAME }}
+      DH_TOKEN: ${{ secrets.DH_TOKEN }}
